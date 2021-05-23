@@ -11,8 +11,9 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["borderify.js"]
+      "matches": ["*://*.finn.no/realestate/homes/search.html*"],
+      "js": ["borderify.js"],
+      "run_at": "document_idle"
     }
   ]
 
